@@ -1,0 +1,18 @@
+'''Weights=========================='''
+weights = 0.1
+
+'''neural network==================='''
+def neural_network(input, weights):
+    return input * weights
+
+'''data============================='''
+number_of_toes = [7., 8., 9., 1.5]
+data = number_of_toes[0]
+
+number_of_goal = [0.8, 0.9, 0.9, 0.15];
+goal = number_of_goal[1]
+
+'''prediction======================='''
+pred = neural_network(data, weights)
+print('prediction: ', pred)
+print('goal: ', goal)
